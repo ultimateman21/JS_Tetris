@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Тетрис</title>
+    <style>
+        @import url('style.css');
+    </style>
+</head>
+
+<body>
+    <div id="start-menu">
+        <button class="text button" id="start">Start</button>
+        <ol class="text records">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <div id="game-field">
+        <canvas width="320" height="640" id="game"></canvas>
+        <div class="block1">
+            <div class="text">Score</div>
+            <div class="text" id="score-value">000000</div>
+            <div class="row">
+                <div class="text">Lines</div>
+                <div class="text" id="line-value">000</div>
+            </div>
+            <div class="block2">
+                <div class="next">
+                    <div class="text">Next</div>
+                    <canvas width="160" height="96" id="next"></canvas>
+                </div>
+                <div class="level">
+                    <div class="text">LV</div>
+                    <div class="text" id="level-value">00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="over-menu">
+        <div class="text" id="text-over">Game Over</div>
+        <button class="text button" id="restart">Restart</button>
+        <button class="text button" id="save">Save Score</button>
+        <ol class="text records">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

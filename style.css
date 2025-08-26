@@ -1,0 +1,132 @@
+﻿body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    background: black;
+    height: 97vh;
+}
+
+button {
+    margin: 10px;
+    background-color: black;
+    border: 5px solid white;
+}
+
+    button:hover {
+        color: black;
+        border-color: black;
+        background-color: white;
+    }
+
+#start-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+    #start-menu .text.button {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    #start-menu .text.records {
+        margin: 25px;
+    }
+
+.text.records {
+    margin: 10px;
+    padding-inline-start: 93px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+li {
+    padding-top: 5px;
+}
+
+#over-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+    #over-menu .text.button {
+        padding: 20px
+    }
+
+#text-over {
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: 34px;
+}
+
+#save {
+    font-size: 25px;
+}
+
+#game-field {
+    position: relative;
+}
+
+#game {
+    border: 5px solid white;
+}
+
+.block1 {
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: calc(50% + 160px + 10px);
+    top: 0;
+    width: 250px;
+    height: 245px;
+    border: 5px solid white;
+}
+
+.text {
+    padding: 5px;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    color: white;
+}
+
+#score-value {
+    border-bottom: 5px solid white;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 5px solid white;
+}
+
+#line-value {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.next {
+    flex-direction: column;
+    border-right: 5px solid white;
+}
+
+.level {
+    flex-direction: column;
+    margin: 0 auto;
+}
